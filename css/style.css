@@ -327,15 +327,59 @@ img{
 
 .footer-bottom{
     height: 210px;
+    color: white;
+    font-family: var(--font);
 }
 .footer-bottom .content{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.footer-bottom img{
+    width: 305px;
+    margin: auto 0;
+}
+.footer-bottom h3{
+    font-size: 24px;
+    margin-bottom: 9px;
+}
+.footer-bottom ul{
+    font-size: 14px;
+    line-height: 22px;
 }
 .footer-bottom p{
+    font-size: 14px;
+}
+#email-sub{
+    width: 356px;
+    display: flex;
+    margin: 10px 0
+}
+#email-sub input{
+    width: 195px;
+    height: 37px;
+    padding: 3px 10px;
+    font-size: 18px;
+}
+#email-sub button{
+    width: 156px;
+    height: 37px;
+    background-color: #8326EF;
     color: white;
-    font-size: 50px;
+    font-size: 22px;
+}
+#siga-nos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#siga-nos h5{
+    font-size: 22px;
+}
+#siga-nos img{
+    width: initial;
+
 }
 
 /* Até 1199px */
