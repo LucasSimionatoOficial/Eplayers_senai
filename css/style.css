@@ -193,7 +193,6 @@ img{
 }
 
 .content-about img {
-    /* width: 48%; */
     max-width: 31.875em;
 }
 
@@ -242,14 +241,16 @@ img{
     background-color: var(--gray);
 }
 .news .content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     position: relative;
+}
+#noticia-position{
+    position: absolute;
+    top: 10px;
 }
 .news .content h2{
     color: white;
     font-size: 30px;
+    margin: 30px 0;
 }
 #noticias{
     display: flex;
@@ -287,7 +288,7 @@ img{
     flex-direction: column;
     align-items: flex-end;
     height: 856px;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 #partidas{
     width: 237px;
@@ -382,17 +383,177 @@ img{
 
 }
 
-/* Até 1199px */
+/* Até 992px */
 @media screen and (max-width: 74.93em){
+    .content{
+        width: 942px;
+    }
+    .header-top .content{
+        justify-content: space-around;
+    }
+    .header-top img{
+        width: 230px;
+    }
+    .menu{
+        margin-right: 30px;
+    }
 
+    .banner-text{
+        position: relative;
+        left: 30px;
+    }
+    .banner-text h1{
+        line-height: 96px;
+    }
+    .banner-text p{
+        margin-top: 18px;
+    }
+    .banner-text a{
+        margin-top: 1em;
+    }
+
+    .games img {
+        width: 145px;
+    }
+    .games ul a:hover img{
+        transform:scale(1.3);
+    }
+    .games{
+        height: 100px
+    }
+
+    .content-about img {
+        max-width: 446px;
+    }
+    .text-about{
+        line-height: 22px;
+        position: relative;
+        top: 20px;
+    }
+    .text-about p {
+        font-size: 17px;
+    }
+
+    .live{
+        height: 108px;
+    }
+    .live h3, .partida h4, .partida h5{
+        font-size: 26px;
+    }
+    .partida{
+        width: 218px;
+    }
+    .partida img{
+        width:  48px;
+        height: 48px;
+    }
+    .news{
+        height: 1225px;
+    }
+    #noticias{
+        width: 596px;
+    }
+
+    .footer-bottom .content{
+        padding: 20px 0;
+    }
+    .footer-bottom h3{
+        font-size: 20px;
+    }
+    .footer-bottom ul{
+        font-size: 14px;
+    }
 }
-/* Até 991px */
+/* Até 769px */
 @media screen and (max-width: 61.93em){
+    .content{
+        width: 730px;
+    }
+    .header-top img{
+        position: relative;
+        left: 20px;
+    }
+    #menu-bars{
+        display: flex;
+        width: 60px;
+        font-size: 1.7rem;
+        padding: 20px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+    #bars{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        height: 300px;
+        width: 400px;
+        justify-content: space-around;
+        right: 0;
+        top: 70px;
+        z-index: 2;
+        align-items: center;
+        background-color: var(--background);
+    }
+    .header-top .content{
+        justify-content: space-between;
+    }
     
 }
-/* até 767px */
-@media screen and (max-width: 47.93em){
-   
+/* até 677px */
+@media screen and (max-width: 48.0625em){
+    .content{
+        width: 730px;
+    }
+    .banner-text h1{
+        font-size: 3.62em;
+        line-height: 60px;
+    }  
+    .banner-text p{
+        font-size: 1.57em;
+    }
+    .banner-text a{
+        padding: 0.6em 1em;
+        font-size: 1.57em;
+    }
+
+    .games img{
+        width: 116px
+    }
+
+    .container-about img{
+        /* display: none; */
+        position: absolute;
+        right: 0;
+        top: 276px;
+        width: 224px;
+
+    }
+    .text-about{
+        width: 100%;
+        /* position: absolute; */
+        z-index: 9;
+    }
+    .live{
+        height: 108px;
+    }
+    .live h3, .partida h4, .partida h5{
+        font-size: 16px;
+    }
+    .partida{
+        width: 170px;
+    }
+    .partida img{
+        width:  41px;
+        height: 41px;
+    }
+
+    .news{
+        height: 2100px
+    }
+    #partidas-position{
+        top: 1200px;
+    }
 }
 /* Até 576px */
 @media screen and (max-width: 36em){

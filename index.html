@@ -16,14 +16,14 @@
         <div class="content flex-spbt-center">
             <img src="img/logo.svg" alt="Logo E-Players">
             <nav class="menu">
-                <ul class="flex-spbt-center">
+                <ul class="flex-spbt-center" id="bars">
                     <li><a href="#">Início</a></li>
                     <li><a href="#">Campeonatos</a></li>
                     <li><a href="#">Resultados</a></li>
                     <li><a href="#">Notícias</a></li>
                     <li><a href="#">Cadastro/Login</a></li>
                 </ul>
-                <a href="#" id="menu-bars">
+                <a href="#" id="menu-bars" onclick="Barras()">
                     <i class="fas fa-bars"></i>
                 </a>
             </nav>
@@ -32,6 +32,7 @@
     <main>
         <section class="banner">
                 <picture>
+                    <source media="(max-width: 48em)" srcset="img/Banner768.jpg">
                     <source media="(max-width: 90em)" srcset="img/Banner1440.jpg">
                     <img src="img/Banner1920.jpg" alt="Pilos de Formula 1, Hamilton, riccardo, Vetel, Verstapen">
                 </picture>
@@ -101,37 +102,39 @@
         </section>
         <section class="news">
             <div class="content">
-                <h2>Notícias</h2>
-                <div id="noticias">
-                    <div class="noticia">
-                        <img src="./img/not1.png" alt="">
-                        <h5>Título da notícia</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text .</p>
-                    </div>
-                    <div class="noticia">
-                        <img src="./img/not2.png" alt="">
-                        <h5>Título da notícia</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text .</p>
-                    </div>
-                    <div class="noticia">
-                        <img src="./img/not3.png" alt="">
-                        <h5>Título da notícia</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text .</p>
-                    </div>
-                    <div class="noticia">
-                        <img src="./img/not4.png" alt="">
-                        <h5>Título da notícia</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text .</p>
-                    </div>
-                    <div class="noticia">
-                        <img src="./img/not5.png" alt="">
-                        <h5>Título da notícia</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text .</p>
-                    </div>
-                    <div class="noticia">
-                        <img src="./img/not6.png" alt="">
-                        <h5>Título da notícia</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text .</p>
+                <div id="noticia-position">
+                    <h2>Notícias</h2>
+                    <div id="noticias">
+                        <div class="noticia">
+                            <img src="./img/not1.png" alt="">
+                            <h5>Título da notícia</h5>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text .</p>
+                        </div>
+                        <div class="noticia">
+                            <img src="./img/not2.png" alt="">
+                            <h5>Título da notícia</h5>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text .</p>
+                        </div>
+                        <div class="noticia">
+                            <img src="./img/not3.png" alt="">
+                            <h5>Título da notícia</h5>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text .</p>
+                        </div>
+                        <div class="noticia">
+                            <img src="./img/not4.png" alt="">
+                            <h5>Título da notícia</h5>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text .</p>
+                        </div>
+                        <div class="noticia">
+                            <img src="./img/not5.png" alt="">
+                            <h5>Título da notícia</h5>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text .</p>
+                        </div>
+                        <div class="noticia">
+                            <img src="./img/not6.png" alt="">
+                            <h5>Título da notícia</h5>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text .</p>
+                        </div>
                     </div>
                 </div>
                 <div id="partidas-position">
@@ -214,6 +217,17 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function Barras() {
+          var active = document.getElementById("bars");
+          if (active.style.display === "flex") {
+            active.style.display = "none";
+          } else {
+            active.style.display = "flex";
+          }
+        }
+    </script>
 
 </body>
 
