@@ -273,12 +273,14 @@ img{
     margin: 13px 18px;
     color: white;
     text-transform: uppercase;
+    text-align: start;
 }
 .noticia p{
     margin: 0px 18px;
     color: white;
     line-height: 19px;
     font-weight: 500;
+    text-align: justify;
 }
 #partidas-position{
     position: absolute;
@@ -382,6 +384,7 @@ img{
     width: initial;
 
 }
+
 
 /* Até 992px */
 @media screen and (max-width: 74.93em){
@@ -548,11 +551,49 @@ img{
         height: 41px;
     }
 
+    #noticia-position{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #noticias{
+        width: 90%;
+        justify-content: space-around;
+        text-align: center;
+    }
     .news{
-        height: 2100px
+        height: 1800px
     }
     #partidas-position{
         top: 1200px;
+        width: 100%;
+        align-items: center;
+    }
+    #partidas{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 474px;
+        height: 381px;
+        align-items: center;
+    }
+    .footer-bottom .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    #links-footer{
+        display: flex;
+        margin: 0 0 20px 0;
+        width: 360px;
+        justify-content: space-between;
+    }
+    .footer-bottom ul{
+        font-size: 18px;
+    }
+    .footer-bottom h3{
+        font-size: 24px;
+    }
+    #footer-siga-email{
+        margin: 20px 0;
     }
 }
 /* Até 576px */
